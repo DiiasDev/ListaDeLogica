@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area do quadrado em dobro</title>
+    <style>
+        /* Adicionando um estilo para centralizar os elementos */
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Faz o container ocupar a altura total da janela */
+            background-image: linear-gradient(to right top, #31506e, #4b6987, #6683a0, #819eba, #9dbad5);
+        }
+
+        #container2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 70vh;
+            border-radius: 3%;
+            background-image: linear-gradient(to right top, #e300b7, #b333ba, #8342b4, #5446a6, #274490);
+        }
+
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #exibirNumero {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        alert{
+            background-color: rgb(246, 20, 20);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="container2">
+            <h1>Area do quadrado em dobro</h1>
+            <input type="text" name="base" id="base" placeholder="Valor da base">
+            <input type="text" name="altura" id="altura" placeholder="Valor da altura">
+            <button id="btn">Calcular</button>
+        </div>
+
+        <div id="exibirValor">
+            <p id="paragrafo"></p>
+        </div>
+    </div>
+
+    <script src="/07_AreaDoQuadrado/script.js"></script>
+</body>
+</html>
